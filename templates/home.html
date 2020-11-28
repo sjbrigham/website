@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+
+    <div class="container">
+     <form action="" class="form">
+      <div class="form-group">
+          <label class="sr-only">Name</label>
+              <input type="text" class="form-control form-control-lg" placeholder="Name">
+          <p></p>
+          <div id="newline">
+          <label class="sr-only">Name</label>
+              <input type="email" class="form-control form-control-lg" placeholder="Email">
+              <p></p>
+              <input type="number" class="form-control form-control-lg" placeholder="Enter a number">
+            <p></p>
+           <button type="submit" class="btn btn-success btn-lg">This data is for testing Postgresql</button>
+         <p></p>
+          </div>
+      </div>
+     </form>
+    </div>
+
+
+
+        {% endblock %}

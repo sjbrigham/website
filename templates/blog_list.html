@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} {{ object.title }} {% endblock %}
+
+{% block content %}
+{% for object in object_list %}
+
+<a class="bloglink" href="{{ object.slug }}">{{ object.title }}</a>
+<p></p>
+
+{% endfor %}
+{% endblock %}
